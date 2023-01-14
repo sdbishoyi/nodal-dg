@@ -1,4 +1,4 @@
-function [Psi_arr,Pi_arr,Phi_arr,t_arr] = ScalarWaveKerr1D(Psi,Pi,Phi,L,M,a,e,FinalTime)
+function [Psi_arr,Pi_arr,Phi_arr,t_arr] = ScalarWaveSch1D(Psi,Pi,Phi,L,M,a,e,FinalTime)
 
 Globals1D;
 time = 0;
