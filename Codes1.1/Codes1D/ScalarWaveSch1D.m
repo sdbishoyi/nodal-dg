@@ -32,7 +32,7 @@ t_arr={}; t_arr=[t_arr,time];
 for tstep=1:Nsteps
    for INTRK = 1:5
       timelocal = time + rk4c(INTRK)*dt;
-      [rhsPsi,rhsPi, rhsPhi] = ScalarWaveKerrRHS1D(Psi,Pi,Phi,rkerr,L,M,a,e,timelocal);
+      [rhsPsi,rhsPi, rhsPhi] = ScalarWaveSchRHS1D(Psi,Pi,Phi,rkerr,L,M,a,e,timelocal);
        
       resPsi = rk4a(INTRK)*resPsi + dt*rhsPsi;     
       resPi = rk4a(INTRK)*resPi + dt*(rhsPi);
